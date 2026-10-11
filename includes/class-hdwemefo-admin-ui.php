@@ -83,6 +83,7 @@ class HDWEMEFO_Admin
             ),
             'hdwebmobile-spin-and-win' => array(
                 'name' => 'Spin & Win',
+            array('name' => 'Vendor Marketplace', 'file' => 'hdwebmobile-vendor-marketplace/hdwebmobile-vendor-marketplace.php', 'description' => 'Turn your store into a multi-vendor marketplace -- vendors can only ever touch their own products, orders, and earnings, enforced by WordPress\'s own core capability system.'),
                 'file' => 'hdwebmobile-spin-and-win/hdwebmobile-spin-and-win.php',
                 'description' => __('A gamified discount-wheel popup with server-enforced one spin per email.', 'hdwebmobile-media-folder-roles'),
             ),
@@ -111,23 +112,30 @@ class HDWEMEFO_Admin
                 'file' => 'hdwebmobile-wishlist/hdwebmobile-wishlist.php',
                 'description' => __('A wishlist that works with block-based Shop pages and guest browsing.', 'hdwebmobile-media-folder-roles'),
             ),
+            'hdwebmobile-formula-pricing' => array(
+                'name' => 'Formula Pricing',
+                'file' => 'hdwebmobile-formula-pricing/hdwebmobile-formula-pricing.php',
+                'description' => __('Price products from customer-entered numbers via a safe formula -- no eval().', 'hdwebmobile-media-folder-roles'),
+            ),
             'hdwebmobile-frequently-bought-together' => array(
                 'name' => 'Frequently Bought Together',
                 'file' => 'hdwebmobile-frequently-bought-together/hdwebmobile-frequently-bought-together.php',
                 'description' => __('An Amazon-style widget that adds several related products in one click.', 'hdwebmobile-media-folder-roles'),
             ),
-            'hdwebmobile-delivery-date-time-slot' => array(
-                'name' => 'Delivery Date & Time Slot',
-                'file' => 'hdwebmobile-delivery-date-time-slot/hdwebmobile-delivery-date-time-slot.php',
+            'hdwebmobile-checkout-delivery-scheduler' => array(
+                'name' => 'Checkout Delivery Scheduler',
+                'file' => 'hdwebmobile-checkout-delivery-scheduler/hdwebmobile-checkout-delivery-scheduler.php',
                 'description' => __('Let customers pick a delivery date and time slot at checkout.', 'hdwebmobile-media-folder-roles'),
             ),
             'hdwebmobile-product-options' => array(
                 'name' => 'Product Options & Add-ons',
-                'file' => 'hdwebmobile-product-options/hdwebmobile-product-options.php',
+            array('name' => 'Request a Quote', 'file' => 'hdwebmobile-request-a-quote/hdwebmobile-request-a-quote.php', 'description' => 'Let customers request a custom price on any product -- only your own signed-off quote, viewed by its owner or an unguessable token, can ever become a cart price.'),
+                'file' => 'hdwebmobile-product-options-add-ons/hdwebmobile-product-options-add-ons.php',
                 'description' => __('Add paid text, dropdown, and checkbox options to products -- flat pricing only, no formulas.', 'hdwebmobile-media-folder-roles'),
             ),
             'hdwebmobile-invoices-packing-slips' => array(
                 'name' => 'Invoices & Packing Slips',
+            array('name' => 'License Key Delivery', 'file' => 'hdwebmobile-license-key-delivery/hdwebmobile-license-key-delivery.php', 'description' => 'Sell software license keys through WooCommerce -- keys are pasted or generated in wp-admin, never imported from an uploaded file.'),
                 'file' => 'hdwebmobile-invoices-packing-slips/hdwebmobile-invoices-packing-slips.php',
                 'description' => __('On-demand invoice and packing-slip documents, printable to PDF from any browser.', 'hdwebmobile-media-folder-roles'),
             ),
@@ -150,6 +158,31 @@ class HDWEMEFO_Admin
                 'name' => 'Photo & Video Reviews',
                 'file' => 'hdwebmobile-photo-video-reviews/hdwebmobile-photo-video-reviews.php',
                 'description' => __('Let customers attach photos and short videos to their product reviews.', 'hdwebmobile-media-folder-roles'),
+            ),
+            'hdwebmobile-loyalty-points' => array(
+                'name' => 'Loyalty Points & Store Credit',
+                'file' => 'hdwebmobile-loyalty-points/hdwebmobile-loyalty-points.php',
+                'description' => __('Customers earn points on orders and redeem them for a discount -- balance always computed from an audit-logged ledger.', 'hdwebmobile-media-folder-roles'),
+            ),
+            'hdwebmobile-simple-subscriptions' => array(
+                'name' => 'Simple Subscriptions',
+                'file' => 'hdwebmobile-simple-subscriptions/hdwebmobile-simple-subscriptions.php',
+                'description' => __('Sell recurring products -- renewal state is always plain scalar columns, never a serialized blob.', 'hdwebmobile-media-folder-roles'),
+            ),
+            'hdwebmobile-product-enquiry' => array(
+                'name' => 'Product Enquiry',
+                'file' => 'hdwebmobile-product-enquiry/hdwebmobile-product-enquiry.php',
+                'description' => __('A pre-sale "ask a question" form for any product -- every field is escaped at the point of output.', 'hdwebmobile-media-folder-roles'),
+            ),
+            'hdwebmobile-product-file-upload' => array(
+                'name' => 'Product File Upload',
+                'file' => 'hdwebmobile-product-file-upload/hdwebmobile-product-file-upload.php',
+                'description' => __('Let customers upload a file with a product -- accepted types are always a hardcoded safe list, never "allow all".', 'hdwebmobile-media-folder-roles'),
+            ),
+            'hdwebmobile-otp-login' => array(
+                'name' => 'OTP Login',
+                'file' => 'hdwebmobile-otp-login/hdwebmobile-otp-login.php',
+                'description' => __('Passwordless email one-time-code login -- a session is only ever created after a hashed, single-use code is verified.', 'hdwebmobile-media-folder-roles'),
             ),
         );
 
