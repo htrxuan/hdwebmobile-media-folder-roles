@@ -21,6 +21,9 @@ Key Features:
 * Restrict media viewing and editing based on folder permissions.
 * Fully compatible with PublishPress Capabilities for advanced role management.
 
+= Enjoying this plugin? =
+If it helps your site, please consider [leaving an honest review on WordPress.org](https://wordpress.org/support/plugin/hdwebmobile-media-folder-roles/reviews/#new-post) -- it helps other WordPress users find it. Found a problem or have an idea? Please [open a support topic](https://wordpress.org/support/plugin/hdwebmobile-media-folder-roles/) first so it can be fixed.
+
 == Installation ==
 
 1. Upload the `hdwebmobile-media-folder-roles` folder to the `/wp-content/plugins/` directory.
